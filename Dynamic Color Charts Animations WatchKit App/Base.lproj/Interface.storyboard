@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="136" alignment="center" radius="0.0" spacing="2" id="eEF-QG-dyO">
+                            <items>
+                                <group width="14" height="1" alignment="left" layout="vertical" radius="0.0" spacing="1" id="ue0-Qk-hnT" userLabel="Axis">
+                                    <items>
+                                        <label width="1" alignment="left" text="100" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="xjC-d0-90T">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="90" textAlignment="center" id="gLE-pF-4X6">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="80" textAlignment="center" id="Dsv-nv-1s9">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="70" textAlignment="center" id="VfE-uv-IMh">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="60" textAlignment="center" id="sSK-2J-gup">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="50" textAlignment="center" id="o14-1Z-xjB">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="40" textAlignment="center" id="jOu-Sy-eIA">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="30" textAlignment="center" id="2yP-3D-5lo">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="20" textAlignment="center" id="aSp-aL-ri0">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="10" textAlignment="center" id="Bah-Pe-XMI">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="daC-cC-lVN" userLabel="color_bar1">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="66L-9X-iyf" userLabel="bar1">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="G5r-yv-ND0" userLabel="color_bar2">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="2yv-vz-J4a" userLabel="bar2">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="R1w-eP-Brm" userLabel="color_bar3">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="LVH-aW-a1s" userLabel="bar3">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="XXS-PB-2BW" userLabel="color_bar4">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="ZGV-4b-YeZ" userLabel="bar4">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="gSb-5z-Yg9" userLabel="color_bar5">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="UpE-3R-fZY" userLabel="bar5">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="B9f-sS-xVw" userLabel="color_bar6">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="iO0-HI-qMO" userLabel="bar6">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="llQ-Oq-bMm" userLabel="color_bar7">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="gdN-U9-Q1J" userLabel="bar7">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="Dnh-kX-u1x" userLabel="color_bar8">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="N8z-8r-cxJ" userLabel="bar8">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="6Gq-NX-4tK" userLabel="color_bar9">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="GsH-aZ-Tp4" userLabel="bar9">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="10" height="1" alignment="left" radius="0.0" spacing="0.0" id="CNN-fy-YNA" userLabel="color_bar10">
+                                    <items>
+                                        <group width="10" height="1" alignment="left" backgroundImage="black_bar_0" radius="0.0" spacing="0.0" id="KuE-uj-3pf" userLabel="bar10">
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.3823257042" green="1" blue="0.42221646909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </group>
+                        <separator alignment="left" id="m7v-5S-V7O"/>
+                    </items>
+                    <connections>
+                        <outlet property="bar1" destination="66L-9X-iyf" id="sb5-wF-TzP"/>
+                        <outlet property="bar10" destination="KuE-uj-3pf" id="rHy-3M-eAe"/>
+                        <outlet property="bar2" destination="2yv-vz-J4a" id="PI7-3B-rbJ"/>
+                        <outlet property="bar3" destination="LVH-aW-a1s" id="Ie1-fG-wSU"/>
+                        <outlet property="bar4" destination="ZGV-4b-YeZ" id="K92-9q-OHr"/>
+                        <outlet property="bar5" destination="UpE-3R-fZY" id="qyz-LO-JbW"/>
+                        <outlet property="bar6" destination="iO0-HI-qMO" id="1Rr-rp-Vzp"/>
+                        <outlet property="bar7" destination="gdN-U9-Q1J" id="iCl-8X-nBo"/>
+                        <outlet property="bar8" destination="N8z-8r-cxJ" id="E8x-Cu-qMf"/>
+                        <outlet property="bar9" destination="GsH-aZ-Tp4" id="sf2-Ji-swY"/>
+                        <outlet property="color_bar1" destination="daC-cC-lVN" id="Mjx-zX-Uwv"/>
+                        <outlet property="color_bar10" destination="CNN-fy-YNA" id="urC-ZH-32g"/>
+                        <outlet property="color_bar2" destination="G5r-yv-ND0" id="Cbj-4T-pGX"/>
+                        <outlet property="color_bar3" destination="R1w-eP-Brm" id="cWM-Ya-y4L"/>
+                        <outlet property="color_bar4" destination="XXS-PB-2BW" id="tgd-HH-6Ib"/>
+                        <outlet property="color_bar5" destination="gSb-5z-Yg9" id="tXh-o9-zlz"/>
+                        <outlet property="color_bar6" destination="B9f-sS-xVw" id="qdS-BJ-rTc"/>
+                        <outlet property="color_bar7" destination="llQ-Oq-bMm" id="hIC-rT-KIl"/>
+                        <outlet property="color_bar8" destination="Dnh-kX-u1x" id="QCr-Bt-UaB"/>
+                        <outlet property="color_bar9" destination="6Gq-NX-4tK" id="biG-Hn-67E"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
