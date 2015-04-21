@@ -1,5 +1,8 @@
 #import "InterfaceController.h"
 
+#define ANIMATION_DURATION 1.0
+#define NUM_BARS 10
+#define NUM_IMAGES 30
 
 @interface InterfaceController()
 {
@@ -7,7 +10,6 @@
     NSArray *color_bars;
     NSArray *colors;
     int barIndex;
-    float animationDuration;
 }
 //These are our black masks
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup * bar1;
@@ -41,7 +43,6 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     barIndex = 0;
-    animationDuration = 1.0;
     //Create an Array of bars
     bars = @[self.bar1, self.bar2,self.bar3,self.bar4,self.bar5,self.bar6,self.bar7,self.bar8,self.bar9,self.bar10];
     
@@ -49,7 +50,7 @@
     color_bars = @[self.color_bar1, self.color_bar2,self.color_bar3,self.color_bar4,self.color_bar5,self.color_bar6,self.color_bar7,self.color_bar8,self.color_bar9,self.color_bar10];
     
     //Generate some colors to make the bars
-    colors = [self createBarColors:10];
+    colors = [self createBarColors:NUM_BARS];
 }
 
 - (void)willActivate {
@@ -70,9 +71,15 @@
     //Set the background image for animating
     [bars[barIndex] setBackgroundImageNamed:@"black_bar_"];
     
+    //get a random number to set the bar to between 0 & NUM_IMAGES
+    int random = arc4random_uniform(NUM_IMAGES);
+    
+    //We want to animate at the same acceleration so change duration based on bar position
+    float duration = ANIMATION_DURATION/(NUM_IMAGES/random);
+    
     //Animate the bar to a random position from 0-30
-    [bars[barIndex] startAnimatingWithImagesInRange:NSMakeRange(0, arc4random_uniform(30))
-                                           duration: animationDuration
+    [bars[barIndex] startAnimatingWithImagesInRange:NSMakeRange(0, random)
+                                           duration: duration
                                         repeatCount: 1];
     
     //Set the color of the bar
@@ -82,7 +89,7 @@
     barIndex++;
     
     //If we are not at the last bar animate the next bar
-    if(barIndex < 10){
+    if(barIndex < NUM_BARS){
         [self performSelector:@selector(animateNextBar) withObject:nil afterDelay:0.01];
     }
 }
@@ -92,8 +99,8 @@
 {
     NSMutableArray *colorsArr = [NSMutableArray array];
     
-    float INCREMENT = 1.0/numColors;
-    for (float hue = 0.0; hue < 1.0; hue += INCREMENT) {
+    float inc = 1.0/numColors;
+    for (float hue = 0.0; hue < 1.0; hue += inc) {
         UIColor *color = [UIColor colorWithHue:hue
                                     saturation:1.0
                                     brightness:1.0
